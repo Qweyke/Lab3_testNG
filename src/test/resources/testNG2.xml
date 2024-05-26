@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="RandomSuite1" verbose="1">
+    <test name="RandomTest1">
+        <groups>
+            <run>
+                <include name="Sorts"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.TestClass1">
+                <methods>
+                    <exclude name="Test1Methode4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="RandomTest2">
+
+        <classes>
+            <class name="com.example.TestClass1">
+                <methods>
+                    <exclude name="Test1Methode1"/>
+                    <exclude name="Test1Methode3"/>
+                </methods>
+            </class>
+            <class name="com.example.TestClass2">
+                <parameter name="username_reg" value="Velma"/>
+                <parameter name="password_reg" value="Mystery228"/>
+                <methods>
+                    <exclude name="Test2LogIn"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

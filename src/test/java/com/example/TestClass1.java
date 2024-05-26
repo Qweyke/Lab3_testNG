@@ -9,6 +9,7 @@ public class TestClass1 {
         double exp_res = 1428;
         double real_res = Class1.SumOfSum();
         Assert.assertEquals(real_res, exp_res, "SumOfSum must return expected result");
+        System.out.println("Correct Sum of sum");
     }
     @Test(groups = "Sums")
     public void Test1Methode2(){
@@ -16,6 +17,7 @@ public class TestClass1 {
         double real_res = Class1.SumOfProd();
         double delta = 0.1;
         Assert.assertEquals(real_res, exp_res, delta, "SumOfSum must return expected result");
+        System.out.println("Correct Sum of production");
     }
 
     @Test(groups = "Sorts")
@@ -24,6 +26,7 @@ public class TestClass1 {
         int[] real_arr = new int[] {9, 9, 1, 4, 6, 22, 37};
         Class1.BubbleSort(real_arr);
         Assert.assertEquals(real_arr, exp_arr, "Arrays must be equaled by bubble");
+        System.out.println("Bubble sort success");
     }
     @Test(groups = "Sorts")
     public void Test1Methode4(){
@@ -31,6 +34,7 @@ public class TestClass1 {
         int[] real_arr = new int[] {9, 39, 1, 0, 6, 72, 37};
         Class1.InsertSort(real_arr);
         Assert.assertEquals(real_arr, exp_arr, "Arrays must be equaled by insert");
+        System.out.println("Insert sort success");
     }
 
     @Test

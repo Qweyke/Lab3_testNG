@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="RegisterSuite1" verbose="1">
+    <test name="ParamsTestSignIn">
+        <groups>
+            <run>
+                <exclude name="Sorts"/>
+                <exclude name="Sums"/>
+                <exclude name="SignIn"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.TestClass1"/>
+            <class name="com.example.TestClass2">
+                <parameter name="username_reg" value="fred"/>
+                <parameter name="password_reg" value="Freddie1337"/>
+                <parameter name="username_in" value="fred"/>
+                <parameter name="password_in" value="Freddie1337"/>
+            </class>
+        </classes>
+    </test>
+</suite>
